@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <form id="form-action" action="http://localhost:8080/create-account" method="post">
+            <h2>Create Account</h2>
+            <div class="form-group">
+                <label for="username">Username :</label>
+                <input id="username" type="text" placeholder="username" name="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password : </label>
+                <input type="password" name="password" id="password" placeholder=" * * * * * " minlength="8" required>
+            </div>
+            <div class="form-group">
+                <label for="cPassword">Confirm Password : </label>
+                <input type="password" name="cPassword" id="cPassword" placeholder=" * * * * * " minlength="8" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Gmail : </label>
+                <input id="email" type="email" name="email" placeholder="example@gmail.com">
+            </div>
+            <div class="btn-submit">
+                <button id="btn" type="submit">Create Account</button>
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

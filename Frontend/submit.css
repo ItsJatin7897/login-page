@@ -1,0 +1,41 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    height: 100vh;
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+}
+
+.data-store{
+    padding: 50px;
+    border-radius: 10px;
+    background-color: azure;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.data-store h2{
+    color: black;
+    font-size: 30px;
+    font-weight: 600
+}
+
+.data-store p{
+    margin: 20px;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}

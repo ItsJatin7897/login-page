@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget Password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <form id="form-action" action="http://localhost:8080/forget-password" method="post">
+            <h2>Forget Password</h2>
+            <div class="form-group">
+                <label for="email">Gmail :</label>
+                <input id="email" type="email" placeholder="example@gmail.com" name="email">
+            </div>
+            <div class="send-otp">
+                <input type="text" name="otp" id="otp" placeholder="OTP">
+                <button id="btn-send">Send OTP</button>
+            </div>
+            <div class="form-group">
+                <label for="Npassword">New Password : </label>
+                <input type="password" name="Npassword" id="Npassword" placeholder=" * * * * * " minlength="8" required>
+            </div>
+            <div class="form-group">
+                <label for="Cpassword">Confirm Password : </label>
+                <input type="password" name="Cpassword" id="Cpassword" placeholder=" * * * * * " minlength="8" required>
+            </div>
+            <div class="btn-submit">
+                <button id="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
